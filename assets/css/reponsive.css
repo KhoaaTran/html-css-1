@@ -1,0 +1,253 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobie {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-menu svg {
+        color: #666;
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        visibility: hidden;
+        transition: 0.2s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        padding: 40px;
+    }
+
+    .menu-drawer ul {
+        margin-top: 20px;
+    }
+
+    .menu-drawer ul a {
+        color: #333;
+        display: block;
+        padding: 14px 0;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked + .menu-overlay {
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .mobile-header .separate {
+        border-top: 1px solid #ccc;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guild-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block {
+        order: 2;
+        margin-top: 32px;
+        padding: 0 20px;
+    }
+
+    .stats .info {
+        order: 1;
+        padding: 0 30px;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .sub-title {
+        width: 70%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .qty-item {
+        text-align: center;
+    }
+
+    .stats .qty {
+        font-size: 5rem;
+    }
+
+    .stats .qty-desc {
+        margin-top: 12px;
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 60px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobie {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .navbar .actions {
+        display: none;
+    }
+
+    .hero-wrap {
+        padding: 20px;
+        height: calc(100vh - 80px)
+    }
+
+    .hero-wrap .title {
+        font-size: 4.4rem;
+    }
+
+    .hero-wrap .desc {
+        width: 100%;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .clients .images {
+        margin-top: 32px;
+    }
+
+    .guides {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .list-guild {
+        flex-direction: column;
+        margin-top: 32px;
+        row-gap: 20px;
+    }
+
+    .featured{
+        padding: 50px 0;
+    }
+
+    .featured .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .featured .list {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        margin-top: 0;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        row-gap: 50px;
+        margin-top: 60px;
+    }
+
+    .subscription {
+        margin-top: 60px;
+    }
+
+    .subscription .info {
+        padding: 32px;
+    }
+
+    .subscription .body {
+        height: auto;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
